@@ -1,0 +1,32 @@
+{
+  "name": "node-red-trexmes-iobox-parser",
+  "version": "1.0.0",
+  "description": "Trex Iot-IoBox data parser",
+  "main": "iobox-parser.js",
+  "keywords": [
+    "node-red",
+    "TrexMes"
+  ],
+  "homepage": "https://github.com/asafyurdakul/node-red-trexmes-iobox-parser",
+  "node-red": {
+    "nodes": {
+      "iobox": "iobox-parser.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asafyurdakul/node-red-trexmes-iobox-parser.git"
+  },
+  "author": "asafyurdakul@trex.com.tr",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/asafyurdakul/node-red-trexmes-iobox-parser/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
