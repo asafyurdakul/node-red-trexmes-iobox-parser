@@ -24,7 +24,7 @@ module.exports = function(RED) {
 		if(!Array.isArray(parsePorts)) {
 			parsePorts = parsePorts.split(',');
 		}
-		var strArray = msgout.split('&');		
+		var strArray = msgout.payload.split('&');		
 		var resultParse;
 		
 		if(!singleoutput) {
@@ -138,10 +138,12 @@ module.exports = function(RED) {
 			   return element !== undefined;
 			});
 			*/
-			resultParse = { payload : resultParse }
-		}        					
-		return resultParse;
+			msg.payload = resultParse;
+			return msg;
+			//resultParse = { payload : resultParse }
+		}        		
 		
+		return resultParse;		
 	}
 	
 	function IoBoxParser(n) {
@@ -150,7 +152,7 @@ module.exports = function(RED) {
 
 		node.on("input",function(msg) {
             //parsing operation
-            var result = parseValues(msg.payload , n.ports, n.onlychanged, n.singleoutput );
+            var result = parseValues(msg , n.ports, n.onlychanged, n.singleoutput );
             if(n.singleoutput) {
                 //console.log(result.payload);
                 if(Object.keys(result.payload).length !== 0) {
