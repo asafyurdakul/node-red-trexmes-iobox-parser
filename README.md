@@ -1,4 +1,4 @@
-# node-red-trexmes-iot-iobox
+# node-red-trexmes-iobox-parser
 
 This is a [Node-Red][1] package parses the data produced by the IoT-IoBox hardware developed by [Mert Software & Electronics][2] 
 
