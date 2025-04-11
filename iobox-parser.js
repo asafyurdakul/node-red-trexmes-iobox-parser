@@ -138,8 +138,8 @@ module.exports = function(RED) {
 			   return element !== undefined;
 			});
 			*/
-			msg.payload = resultParse;
-			return msg;
+			msgout.payload = resultParse;
+			return msgout;
 			//resultParse = { payload : resultParse }
 		}        		
 		
