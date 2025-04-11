@@ -1,5 +1,5 @@
 {
-  "name": "node-red-trexmes-iot-iobox-parser",
+  "name": "node-red-trexmes-iot-iobox",
   "version": "1.0.4",
   "description": "Trex Iot-IoBox data parser",
   "main": "iobox-parser.js",
